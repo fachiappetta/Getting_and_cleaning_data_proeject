@@ -1,0 +1,30 @@
+#This is the code book for the project
+
+#How to get to the tinyData.txt:
+
+Download data from the link below and unzip it into working directory of R Studio.
+Execute the R script.
+About the source data
+
+##Datasource
+The source data are from the Human Activity Recognition Using Smartphones Data Set. A full description is available at the site where the data was obtained: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones Here are the data for the project: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+# R code "run_analysis.R" performs the 5 following steps:
+
+1. Reading in the files and merging the training and the test sets to create one data set.
+      step 1- Read feature vector and acitivty label 
+      step 2- Read activity description datasets (y) for TEST and TRAIN
+      step 3- Read subject dataset (subject) for TEST and TRAIN
+      step 4- Read activity dataset (x) for TEST and TRAIN
+      step 5- Merges the training and the test sets to create one data set
+      step 6- extracts only the measurements on the mean and standard deviation for each measurement.
+2. Extracts only the measurements on the mean and standard deviation for each measurement
+3. Uses descriptive activity names to name the activities in the data set
+4. Appropriately labels the data set with descriptive variable names
+5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject
+
+
+About variables:
+x_train, y_train, x_test, y_test, subject_train and subject_test contain the data from the downloaded files.
+x_data, y_data and subject_data merge the previous datasets to further analysis.
+features contains the correct names for the x_data dataset, which are applied to the column names stored in
